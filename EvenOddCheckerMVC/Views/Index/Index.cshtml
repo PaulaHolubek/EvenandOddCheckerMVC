@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+    if (ViewBag.num % 2 == 0)
+    {
+        string ans = "Even";
+        ViewBag.answer = ans;
+    }
+    else
+    {
+        string ans = "Odd";
+        ViewBag.answer = ans;
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        
+        <h2>The Number is @ViewBag.num and it is @ViewBag.answer </h2>
+    </div>
+</body>
+</html>
